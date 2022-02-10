@@ -10,8 +10,10 @@ WORKDIR /usr/src/app/frontend
 COPY package*.json /usr/src/app/frontend
 RUN npm install
 
+
 # Copying source files
 COPY . /usr/src/app/frontend
+# RUN chmod -R +x node_modules/next/dist/bin/next-*
 
 # Building app
 # RUN npm run build
