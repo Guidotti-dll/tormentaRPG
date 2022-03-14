@@ -12,7 +12,8 @@ RUN npm install
 
 
 # Copying source files
-COPY . /usr/src/app/frontend
+COPY . .
+# COPY . /usr/src/app/frontend
 # RUN chmod -R +x node_modules/next/dist/bin/next-*
 
 # Building app
@@ -20,4 +21,4 @@ COPY . /usr/src/app/frontend
 EXPOSE 3000
 
 # Running the app
-CMD "npm" "run" "dev"
+CMD ["npm", "run", "dev"]

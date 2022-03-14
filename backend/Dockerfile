@@ -8,7 +8,8 @@ WORKDIR /usr/src/app/backend
 COPY package*.json /usr/src/app/backend/
 RUN npm install
 
-COPY . /usr/src/app/backend/
+COPY . .
+# COPY . /usr/src/app/backend/
 
 EXPOSE 3333
 
